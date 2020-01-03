@@ -1,1 +1,40 @@
 #First Test in Github
+#This whole things should be run in Python
+#Attempt to make a fractal. AKA Sierpinski's Triangle
+def create_triangle():
+    for i in range(3):
+        dot.forward(600)
+        dot.dot()
+        coordinates[dot.xcor()] = dot.ycor()
+        dot.left(120)
+
+def create_fractal():
+    temp = random.randint(1,3)
+    x, y, f = coordinates.items()
+    if temp == 1:
+        dot.seth(dot.towards(x[0], x[1]))
+        dot.forward((dot.distance(x[0],x[1])/2))
+        dot.dot()
+    elif temp == 2:
+        dot.seth(dot.towards(y[0], y[1]))
+        dot.forward((dot.distance(y[0], y[1]) /2))
+        dot.dot()
+    else:
+        dot.seth(dot.towards(f[0], f[1]))
+        dot.forward((dot.distance(f[0], f[1]) /2))
+        dot.dot()
+        pass
+
+import random
+import turtle
+coordinates = {}
+wn = turtle.Screen()
+dot = turtle.Turtle()
+dot.hideturtle()
+dot.speed(0)
+dot.up()
+dot.goto(-320,-320)
+create_triangle()
+while True:
+    create_fractal()
+wn.mainloop()
