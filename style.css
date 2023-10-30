@@ -3,4 +3,23 @@ main {
   border-radius: 8px;
   padding: 5px 5px;
 }
+nav {
+  overflow: hidden;
+  border: 5px solid black; 
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 8px 5px;
+}
+nav a{
+  color: black;
+  display: inline;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav a:hover{
+  border: 2px solid black; 
+  border-radius: 8px;
+  margin: 10px;
+}
 
