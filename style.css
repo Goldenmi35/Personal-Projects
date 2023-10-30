@@ -1,7 +1,7 @@
 body{
   background-image: url('desertdrawing.jpg');
   background-position: bottom; 
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 main {
