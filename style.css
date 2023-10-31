@@ -10,6 +10,7 @@ img.aboutme{
   margin: 0px 8px;
   border: 5px black solid;
   border-radius: 8px;
+  object-fit: contain;
 }
 main {
   font-family: Helvetica,Arial, sans-serif;
